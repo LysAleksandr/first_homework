@@ -1,1 +1,15 @@
+name: Current date and time
 
+on:
+  push:
+    brances: ["**"]
+  pull_request:
+    branches: ["**"]
+
+jobs:
+  datetime:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Show current date and time
+      run: |
+        echo "Current date and time: $(date '+%Y-%m-%d %H:%M:%S %Z')"
