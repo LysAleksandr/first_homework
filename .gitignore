@@ -1,0 +1,139 @@
+# Compiled class files
+*.class
+*.war
+*.ear
+*.nar
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# NetBeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Logs
+logs/
+*.log
+log/
+*.log.*
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.swp
+*~
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Application specific
+application.properties
+application-dev.properties
+application-prod.properties
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Coverage reports
+coverage/
+*.gcda
+*.gcno
+*.lcov
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+
+# Unit test reports
+TEST*.xml
+
+# IDE specific files
+.attach_pid*
+
+# Maven wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+# Exclude target but keep specific build artifacts
+!**/target/maven-archiver/
+!**/target/classes/
+!**/target/generated-sources/
+!**/target/generated-test-sources/
+
+# Ignore package-lock.json for Node.js (if used)
+package-lock.json
+
+# Ignore all .txt files (optional)
+*.txt
+
+# Except specific files (optional)
+!README.txt
+!LICENSE.txt
+
+# Ignore all .md files except README.md
+*.md
+!README.md
+
+# Ignore system files
+*.orig
+
+# Ignore any secret files
+secrets.yml
+config/application-secret.yml
+
+# Ignore local configuration
+local.properties
