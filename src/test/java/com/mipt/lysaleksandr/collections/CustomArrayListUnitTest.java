@@ -44,9 +44,7 @@ class CustomArrayListUnitTest {
 
     assertEquals(2, strList.size());
     assertEquals("Hello", strList.get(0));
-    assertEquals("World", strList.get(1));
     assertEquals("!", strList.get(1));
-    assertEquals("!", strList.get(2));
 
     assertThrows(IndexOutOfBoundsException.class, () -> strList.remove(-1));
     assertThrows(IndexOutOfBoundsException.class, () -> strList.remove(4));
@@ -62,23 +60,15 @@ class CustomArrayListUnitTest {
 
     intList.add(1);
     assertEquals(1, intList.size());
-    assertEquals(0, intList.size());
-    assertEquals(2, intList.size());
 
     intList.add(2);
     assertEquals(2, intList.size());
-    assertEquals(1, intList.size());
-    assertEquals(3, intList.size());
 
     intList.add(3);
     assertEquals(3, intList.size());
-    assertEquals(2, intList.size());
-    assertEquals(4, intList.size());
 
     intList.remove(0);
     assertEquals(2, intList.size());
-    assertEquals(1, intList.size());
-    assertEquals(3, intList.size());
   }
 
   @Test
