@@ -10,8 +10,8 @@ public class StubTaskRepository implements TaskRepository {
     private final Map<Long, Task> storage = new HashMap<>();
 
     public StubTaskRepository() {
-        storage.put(1L, new Task(1L, "Stub 1", "Stub Desc 1", false));
-        storage.put(2L, new Task(2L, "Stub 2", "Stub Desc 2", true));
+        storage.put(1L, new Task(1L, "Stub 1", "Stub Description 1", false));
+        storage.put(2L, new Task(2L, "Stub 2", "Stub Description 2", true));
     }
 
     @Override
