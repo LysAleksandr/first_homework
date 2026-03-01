@@ -11,7 +11,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class TodoManagerApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(TodoManagerApplication.class, args);
+        ConfigurableApplicationContext context = SpringApplication.run(TodoManagerApplication.class,
+            args);
 
         TaskStatisticsService statisticsService = context.getBean(TaskStatisticsService.class);
         statisticsService.printStatistics();
