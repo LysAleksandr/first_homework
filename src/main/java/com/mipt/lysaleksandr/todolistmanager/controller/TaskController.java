@@ -1,8 +1,8 @@
-package com.mipt.lysaleksandr.todomanager.controller;
+package com.mipt.lysaleksandr.todolistmanager.controller;
 
-import com.mipt.lysaleksandr.todomanager.config.AppConfig;
-import com.mipt.lysaleksandr.todomanager.model.Task;
-import com.mipt.lysaleksandr.todomanager.service.TaskService;
+import com.mipt.lysaleksandr.todolistmanager.config.AppConfig;
+import com.mipt.lysaleksandr.todolistmanager.model.Task;
+import com.mipt.lysaleksandr.todolistmanager.service.TaskService;
 import org.springframework.beans.factory.annotation.Lookup;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -39,7 +39,7 @@ public class TaskController {
     @ResponseStatus(HttpStatus.CREATED)
     public Task createTask(@RequestBody Task task) {
         AppConfig.PrototypeScopedBean prototypeBean = getPrototypeScopedBean();
-        System.out.println("Generated: " + prototypeBean.generateId());
+        System.out.println("Generated ID: " + prototypeBean.generateId());
         return taskService.save(task);
     }
 

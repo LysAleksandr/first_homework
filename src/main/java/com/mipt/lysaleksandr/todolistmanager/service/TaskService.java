@@ -1,7 +1,7 @@
-package com.mipt.lysaleksandr.todomanager.service;
+package com.mipt.lysaleksandr.todolistmanager.service;
 
-import com.mipt.lysaleksandr.todomanager.model.Task;
-import com.mipt.lysaleksandr.todomanager.repository.TaskRepository;
+import com.mipt.lysaleksandr.todolistmanager.model.Task;
+import com.mipt.lysaleksandr.todolistmanager.repository.TaskRepository;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Service;
@@ -23,11 +23,12 @@ public class TaskService {
     @PostConstruct
     public void initCache() {
         taskRepository.findAll().forEach(task -> taskCache.put(task.getId(), task));
+        System.out.println("Cache initialized with " + taskCache.size() + " tasks");
     }
 
     @PreDestroy
     public void cleanUp() {
-        System.out.println("Cache size: " + taskCache.size());
+        System.out.println("Cleaning up. Cache size: " + taskCache.size());
         taskCache.clear();
     }
 

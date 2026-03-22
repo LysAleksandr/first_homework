@@ -1,4 +1,4 @@
-package com.mipt.lysaleksandr.todomanager.aspect;
+package com.mipt.lysaleksandr.todolistmanager.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -10,7 +10,7 @@ import java.util.Arrays;
 @Component
 public class LoggingAspect {
 
-    @Around("execution(* com.mipt.lysaleksandr.todomanager.service..*(..))")
+    @Around("execution(* com.mipt.lysaleksandr.todolistmanager.service..*(..))")
     public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
         String methodName = joinPoint.getSignature().toShortString();
         Object[] args = joinPoint.getArgs();

@@ -1,4 +1,4 @@
-package com.mipt.lysaleksandr.todomanager.config;
+package com.mipt.lysaleksandr.todolistmanager.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

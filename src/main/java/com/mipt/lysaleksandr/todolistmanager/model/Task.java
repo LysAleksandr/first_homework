@@ -1,4 +1,4 @@
-package com.mipt.lysaleksandr.todomanager.model;
+package com.mipt.lysaleksandr.todolistmanager.model;
 
 public class Task {
 

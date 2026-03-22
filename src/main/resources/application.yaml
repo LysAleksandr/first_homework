@@ -2,7 +2,7 @@ server:
   port: 8080
 
 app:
-  name: "ToDoManager"
+  name: "ToDoListManager"
   version: "1.0"
 
 ---
@@ -16,7 +16,7 @@ server:
 
 logging:
   level:
-    com.mipt.lysaleksandr.todomanager: DEBUG
+    com.mipt.lysaleksandr.todolistmanager: DEBUG
 
 ---
 spring:
@@ -26,3 +26,7 @@ spring:
 
 server:
   port: 80
+
+logging:
+  level:
+    com.mipt.lysaleksandr.todolistmanager: WARN

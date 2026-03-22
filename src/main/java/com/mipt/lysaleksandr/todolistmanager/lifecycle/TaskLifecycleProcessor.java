@@ -1,4 +1,4 @@
-package com.mipt.lysaleksandr.todomanager.lifecycle;
+package com.mipt.lysaleksandr.todolistmanager.lifecycle;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

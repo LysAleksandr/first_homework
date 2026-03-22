@@ -1,6 +1,6 @@
-package com.mipt.lysaleksandr.todomanager.service;
+package com.mipt.lysaleksandr.todolistmanager.service;
 
-import com.mipt.lysaleksandr.todomanager.repository.TaskRepository;
+import com.mipt.lysaleksandr.todolistmanager.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ public class TaskStatisticsService {
     private final TaskRepository primaryRepository;
     private final TaskRepository stubRepository;
 
-    @Value("${app.name:ToDoApp}")
+    @Value("${app.name:ToDoListManager}")
     private String appName;
 
     @Value("${app.version:1.0}")

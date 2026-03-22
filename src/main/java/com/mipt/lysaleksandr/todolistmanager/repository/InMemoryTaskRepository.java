@@ -1,6 +1,6 @@
-package com.mipt.lysaleksandr.todomanager.repository;
+package com.mipt.lysaleksandr.todolistmanager.repository;
 
-import com.mipt.lysaleksandr.todomanager.model.Task;
+import com.mipt.lysaleksandr.todolistmanager.model.Task;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 import jakarta.annotation.PostConstruct;

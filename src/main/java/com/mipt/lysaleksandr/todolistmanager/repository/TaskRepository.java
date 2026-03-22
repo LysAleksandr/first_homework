@@ -1,6 +1,6 @@
-package com.mipt.lysaleksandr.todomanager.repository;
+package com.mipt.lysaleksandr.todolistmanager.repository;
 
-import com.mipt.lysaleksandr.todomanager.model.Task;
+import com.mipt.lysaleksandr.todolistmanager.model.Task;
 import java.util.List;
 import java.util.Optional;
 
