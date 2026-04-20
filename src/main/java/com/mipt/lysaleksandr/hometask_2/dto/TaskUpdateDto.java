@@ -1,6 +1,7 @@
 package com.mipt.lysaleksandr.hometask_2.dto;
 
 import com.mipt.lysaleksandr.hometask_2.model.Priority;
+import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.Size;
 import java.time.LocalDate;
 import java.util.Set;
