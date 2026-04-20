@@ -28,7 +28,10 @@ public class AttachmentController {
     @Operation(summary = "Upload attachment for task")
     @PostMapping("/tasks/{taskId}/attachments")
     public ResponseEntity<AttachmentResponseDto> uploadAttachment(@PathVariable Long taskId,
-        @RequestParam("file") MultipartFile file) throws IOException {
+        @RequestParam(value = "file", required = false) MultipartFile file) throws IOException {
+        if (file == null || file.isEmpty()) {
+            throw new IllegalArgumentException("File is required");
+        }
         TaskAttachment attachment = attachmentService.storeAttachment(taskId, file);
         return ResponseEntity.status(201).body(toDto(attachment));
     }
