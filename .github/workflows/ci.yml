@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "hometask_2" ]
   pull_request:
-    branches: [ "Feature/hw14_to_do_list_manager" ]
+    branches: [ "Feature/hw14-to-do-list-manager" ]
 
 jobs:
   build:
